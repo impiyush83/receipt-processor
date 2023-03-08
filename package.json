@@ -1,0 +1,44 @@
+{
+  "name": "receipt-processor",
+  "version": "1.0.0",
+  "description": "Processes reciepts in a scalable manner",
+  "main": "app.js",
+  "dependencies": {
+    "babel-eslint": "^10.1.0",
+    "body-parser": "^1.20.2",
+    "eslint": "^8.35.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "express": "^4.18.2",
+    "kafkajs": "^2.2.4",
+    "lodash": "^4.17.21",
+    "morgan": "^1.10.0",
+    "pm2": "^5.2.2",
+    "winston": "^3.8.2"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  },
+  "scripts": {
+    "start": "pm2 start app.js --exp-backoff-restart-delay=100 --max-memory-restart 100M",
+    "stop": "pm2 stop all",
+    "logs": "pm2 logs",
+    "scale-zero": "pm2 delete all",
+    "test": "mocha",
+    "lint": "node_modules/eslint/bin/eslint.js .",
+    "auto:lint:fix": "eslint --fix --ext .js,.jsx ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/impiyush83/receipt-processor.git"
+  },
+  "keywords": [
+    "reciept"
+  ],
+  "author": "Piyush Nalawade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/impiyush83/receipt-processor/issues"
+  },
+  "homepage": "https://github.com/impiyush83/receipt-processor#readme"
+}

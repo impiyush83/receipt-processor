@@ -1,0 +1,14 @@
+version: "3"
+services:
+  reciept-processor-service:
+    env_file:
+      - .env
+    container_name: reciept-processor-service
+    network_mode: "bridge"
+    build: .
+    command: npm run start
+    ports:
+      - "7070:7070"
+    volumes:
+      - "./:/usr/src/app"
+      - /usr/src/app/node_modules
