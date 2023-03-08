@@ -1,0 +1,28 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# vscode stuff
+.idea
+.vscode
+.DS_Store        
+core/.DS_Store 
+.cache/
