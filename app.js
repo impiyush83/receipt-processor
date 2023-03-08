@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port, () => {
-    logger.log(`Example app listening on port ${port}`);
+    logger.info(`Example app listening on port ${port}`);
 });
 
 app.use((err, req, res) => {
