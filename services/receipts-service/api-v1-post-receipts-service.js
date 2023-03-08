@@ -3,7 +3,7 @@ const responseHandler = require('../../core/lib/response-handler');
 
 const apiV1GetPointsService = {};
 
-apiV1GetPointsService.processReciepts = async (req, res) => {
+apiV1GetPointsService.processReceipts = async (req, res) => {
   try {
     responseHandler.respond(response, res);
   } catch (error) {

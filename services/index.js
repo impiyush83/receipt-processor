@@ -1,3 +1,3 @@
 module.exports = {
-    recieptsService: require('./reciepts-service')
+    receiptsService: require('./receipts-service')
 }

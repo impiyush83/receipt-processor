@@ -1,8 +1,8 @@
 const express = require('express');
 
 const router = express.Router();
-const RecieptRoutes = require('./reciept-routes');
+const ReceiptRoutes = require('./receipt-routes');
 
-router.use('/reciepts', RecieptRoutes);
+router.use('/receipts', ReceiptRoutes);
 
 module.exports = router;

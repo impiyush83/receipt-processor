@@ -1,9 +1,9 @@
 version: "3"
 services:
-  reciept-processor-service:
+  receipt-processor-service:
     env_file:
       - .env
-    container_name: reciept-processor-service
+    container_name: receipt-processor-service
     network_mode: "bridge"
     build: .
     command: npm run start

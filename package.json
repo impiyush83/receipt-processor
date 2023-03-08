@@ -1,7 +1,7 @@
 {
   "name": "receipt-processor",
   "version": "1.0.0",
-  "description": "Processes reciepts in a scalable manner",
+  "description": "Processes receipts in a scalable manner",
   "main": "app.js",
   "dependencies": {
     "babel-eslint": "^10.1.0",
@@ -33,7 +33,7 @@
     "url": "git+https://github.com/impiyush83/receipt-processor.git"
   },
   "keywords": [
-    "reciept"
+    "receipt"
   ],
   "author": "Piyush Nalawade",
   "license": "ISC",
