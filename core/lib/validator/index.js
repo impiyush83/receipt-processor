@@ -1,4 +1,3 @@
-const moment = require('moment');
 const validate = require('validate.js');
 const errorFormatter = require('./formatter');
 
