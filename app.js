@@ -15,14 +15,14 @@ app.use(bodyParser.json());
 
 app.use(requestParser());
 
-app.use('/v1', routes);
+app.use('/', routes);
 
 app.get('/health', (req, res) => {
-    res.send(404).json({'message': 'Service Up & Running'});
+    res.status(200).json({'message': 'Service Up & Running'});
 });
 
 app.get('/', (req, res) => {
-    res.send(200).json({'message': 'OK'});
+    res.status(200).json({'message': 'OK'});
 });
 
 app.listen(port, () => {
@@ -30,7 +30,7 @@ app.listen(port, () => {
 });
 
 app.use((req, res, next) => {
-    res.send(404).json({'message': 'Invalid Route'});
+    res.status(404).json({'message': 'Invalid Route'});
 });
 
 // error handler
