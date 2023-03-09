@@ -1,9 +1,9 @@
 const logger = require('winston');
 const responseHandler = require('../../core/lib/response-handler');
 
-const apiV1PostRecieptsController = {};
+const apiV1PostReceiptsController = {};
 
-apiV1PostRecieptsController.processReciepts = async (req, res) => {
+apiV1PostReceiptsController.processReceipts = async (req, res) => {
   try {
     responseHandler.respond(response, res);
   } catch (error) {
@@ -12,4 +12,4 @@ apiV1PostRecieptsController.processReciepts = async (req, res) => {
   }
 };
 
-module.exports = apiV1PostRecieptsController;
+module.exports = apiV1PostReceiptsController;

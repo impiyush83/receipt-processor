@@ -1,3 +1,3 @@
 module.exports = {
-    recieptsController: require('./reciepts-controller')
+    receiptsController: require('./receipts-controller')
 }
