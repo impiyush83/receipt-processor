@@ -11,9 +11,6 @@ const calculateReceiptPoints = async (receiptId, receipt) => {
 
 }
 
-
-
-
 const worker = async () => {
     await consumer.connect()
     await consumer.subscribe({ topic: kafkaTopics.receiptPointsCalculator, fromBeginning: true })
