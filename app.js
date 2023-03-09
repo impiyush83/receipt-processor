@@ -8,6 +8,9 @@ const responseHandler = require('./core/lib/response-handler');
 const requestParser = require('./core/lib/request-parser');
 const logger = require('./core/lib/logger');
 const routes = require('./routes/index');
+const worker = require('./workers/process-receipts');
+
+worker()
 
 app.use(requestLogger('common', { stream: logger.stream }));
 
@@ -40,3 +43,4 @@ app.use((err, req, res, next) => {
     logger.error('Error caught by error handler: ', err);
     responseHandler.handleError(err, res);
 });
+
