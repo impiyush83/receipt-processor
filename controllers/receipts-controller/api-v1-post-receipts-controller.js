@@ -7,7 +7,7 @@ const apiV1PostReceiptsController = {};
 apiV1PostReceiptsController.processReceipts = async (req, res) => {
   try {
     const response = await services.receiptsService.apiV1PostReceiptsService.processReceipts(
-      req.body
+      req.body,
     );
     responseHandler.respond(response, res);
   } catch (error) {
