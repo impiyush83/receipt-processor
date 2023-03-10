@@ -34,5 +34,10 @@
 1. Funtional tests by mocking kafka
 
 
+# Issues in exercise
+
+1. api.yml has an example Mountain Dew 12PK. The regex associated with it is wrong, as it does not allow any whitespace character.
+
+
 
 
