@@ -1,3 +1,5 @@
+const receiptsService = require('./receipts-service');
+
 module.exports = {
-    receiptsService: require('./receipts-service')
-}
+  receiptsService,
+};

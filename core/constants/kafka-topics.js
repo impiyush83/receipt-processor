@@ -1,5 +1,5 @@
 const kafkaTopics = Object.freeze({
-    receiptPointsCalculator: 'calculate-receipt-points'
+  receiptPointsCalculator: 'calculate-receipt-points',
 });
 
 module.exports = kafkaTopics;

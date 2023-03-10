@@ -26,5 +26,13 @@
 6. Arange Act Assert  pattern for testing data
 7. Custom error handling
 8. Alpine node:16 image which is very light-weight base image of nodejs
+9. Schema Validator
+
+
+# TODO 
+
+1. Funtional tests by mocking kafka
+
+
 
 

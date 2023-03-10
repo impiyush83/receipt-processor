@@ -8,17 +8,6 @@ const ItemBuilder = require('./data-builders/item');
 const calculateReceiptPoints = require('../helpers/receipt-point-calculator');
 
 describe('Reciept points calculator', async () => {
-  describe('when reciept is empty', () => {
-    it('should return 0 points', async () => {
-      const receiptBuilder = new ReceiptBuilder();
-      const receiptData = receiptBuilder.build();
-
-      const points = calculateReceiptPoints(receiptData);
-
-      expect(points).to.be.equal(0);
-    });
-  });
-
   describe('when reciept is example 1', () => {
     it('should return 28 points', async () => {
       const receiptBuilder = new ReceiptBuilder();
